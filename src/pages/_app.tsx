@@ -11,6 +11,7 @@ function App({ Component, pageProps }: AppProps) {
         <title>Fabio Morelli Trainer</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Site Fabio Morelli Trainer" />
+        <link rel="manifest" href="/manifest.json" />
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />

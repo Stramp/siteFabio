@@ -6,3 +6,7 @@ export const Wrapper = styled.main`
   width: 100vw;
   height: 100vh;
 `
+export const Descriptions = styled.p`
+  color: #fff;
+  font-size: 2rem;
+`
