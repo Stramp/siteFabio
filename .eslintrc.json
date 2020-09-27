@@ -26,8 +26,12 @@
   },
   "plugins": ["react", "@typescript-eslint", "react-hooks", "prettier"],
   "rules": {
-    "prettier/prettier": "error",
-    "react-hooks/rules-of-hooks": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
     "react-hooks/exhaustive-deps": "warn",
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
