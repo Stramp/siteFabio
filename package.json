@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint src --max-warnings=0",
     "test": "jest",
+    "genere": "yarn plop",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook -s ./public"
@@ -43,6 +44,7 @@
     "jest": "^26.4.2",
     "jest-styled-components": "^7.0.3",
     "lint-staged": "^10.4.0",
+    "plop": "^2.7.4",
     "prettier": "^2.0.5",
     "react-is": "^16.13.1",
     "typescript": "^4.0.3"

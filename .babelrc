@@ -3,9 +3,23 @@
     [
       "babel-plugin-styled-components",
       {
-        "ssr": false
+        "ssr": false,
+        "displayName": true
       }
     ]
   ],
-  "presets": ["@babel/preset-typescript", "next/babel"]
+  "presets": ["@babel/preset-typescript", "next/babel"],
+  "env": {
+    "test": {
+      "plugins": [
+        [
+          "babel-plugin-styled-components",
+          {
+            "ssr": false,
+            "displayName": false
+          }
+        ]
+      ]
+    }
+  }
 }
