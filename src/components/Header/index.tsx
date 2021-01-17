@@ -1,9 +1,10 @@
 import * as S from './styles'
-import Navigation from '../Navigation'
+import Navigation from '../assets/Navigation'
+import InstaLogo from '../assets/InstaLogo'
 
 const Header = () => (
   <S.Wrapper>
-    <h1>teste</h1>
+    <InstaLogo />
     <Navigation />
   </S.Wrapper>
 )

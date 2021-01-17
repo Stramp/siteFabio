@@ -1,7 +1,27 @@
+import _default from './defaultTheme'
+const _d = _default
 export const dark = {
-  bgColor: 'red'
+  _d,
+  colors: {
+    primary: '#0088ff',
+    secondary: '#3CD3C1',
+    mainBg: '#0d0d0d',
+    mainTxt: '#FAFAFA',
+    lightGray: '#EAEAEA',
+    gray: '#8F8F8F',
+    darkGray: '#2E2F42'
+  }
 }
 export const light = {
-  bgColor: 'blue'
+  _d,
+  colors: {
+    primary: '#0088ff',
+    secondary: '#3CD3C1',
+    mainBg: '#FAFAFA',
+    mainTxt: '#030517',
+    lightGray: '#EAEAEA',
+    gray: '#8F8F8F',
+    darkGray: '#2E2F42'
+  }
 }
-export const currentTheme = light
+export const currentTheme = dark
