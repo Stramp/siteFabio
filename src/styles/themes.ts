@@ -24,4 +24,4 @@ export const light = {
     darkGray: '#2E2F42'
   }
 }
-export const currentTheme = dark
+export const currentTheme = light

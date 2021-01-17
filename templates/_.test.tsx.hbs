@@ -1,11 +1,12 @@
-import { render } from '@testing-library/react'
+import { screen } from '@testing-library/react'
 import {{pascalCase name}} from '.'
+import { renderWithTheme } from 'utils/tests/helpers'
 
 describe('<{{pascalCase name}} />', () => {
-  it('should render heading', () => {
+  it('should render component', () => {
     //renderizar componente utilizando o 'render'
     //selecionar elemento a ser testado 'screen' (queries)
     //expect nosso teste
-    expect(render(<{{pascalCase name}} />))
+    expect(renderWithTheme(<{{pascalCase name}} />))
   })
 })
