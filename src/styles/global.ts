@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle, css } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -6,12 +6,14 @@ const GlobalStyle = createGlobalStyle`
     padding:0;
     box-sizing:border-box;
   }
-  html{
-    font-size:62.5%
-  }
-  body{
-    font-family:Montserrat, sans-serif;
-  }
+  ${({ theme }) => css`
+    html {
+      font-size: 62.5%;
+    }
+    body {
+      font-family: ${theme._d.font.family};
+    }
+  `}
 `
 
 export default GlobalStyle
