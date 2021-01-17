@@ -1,5 +1,9 @@
 import * as S from './styles'
 
-const {{pascalCase name}} = () => <S.Wrapper />
+export type {{pascalCase name}}Props = {
+  color?: 'mainTxt'
+}
+
+const {{pascalCase name}} = ({ color = 'mainTxt' }: {{pascalCase name}}Props) => <S.Wrapper />
 
 export default {{pascalCase name}}
