@@ -1,12 +1,16 @@
 import * as S from './styles'
 
 export type HeadingProps = {
-  prevTit: React.ReactNode
-  posTit: React.ReactNode
+  prevTit?: React.ReactNode
+  posTit?: React.ReactNode
   sizeLine?: string
 }
 
-const Heading = ({ prevTit, posTit, sizeLine = '75vw' }: HeadingProps) => (
+const Heading = ({
+  prevTit = 'Titulo',
+  posTit = 'Sessao',
+  sizeLine = '75vw'
+}: HeadingProps) => (
   <S.wraper>
     <S.h2>
       {prevTit}

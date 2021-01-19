@@ -3,22 +3,7 @@ import Heading, { HeadingProps } from '.'
 
 export default {
   title: 'Heading',
-  component: Heading,
-  argTypes: {
-    prevTit: {
-      type: 'string'
-    },
-    posTit: {
-      type: 'string'
-    },
-    sizeLine: {
-      type: 'string'
-    }
-  }
+  component: Heading
 } as Meta
 
 export const Default: Story<HeadingProps> = (args) => <Heading {...args} />
-Default.args = {
-  prevTit: 'Titulo',
-  posTit: 'Sessao'
-}
