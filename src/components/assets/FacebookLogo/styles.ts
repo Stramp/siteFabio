@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
-import { InstaLogoProps } from '.'
+import { FacebookLogoProps } from '.'
 
-export const Wrapper = styled.div<InstaLogoProps>`
+export const Wrapper = styled.div<FacebookLogoProps>`
   ${({ theme, size }) => css`
     color: ${theme.colors.mainTxt};
     width: ${size};

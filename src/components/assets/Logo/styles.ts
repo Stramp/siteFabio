@@ -1,10 +1,9 @@
 import styled, { css } from 'styled-components'
-import { InstaLogoProps } from '.'
+import { LogoProps } from '.'
 
-export const Wrapper = styled.div<InstaLogoProps>`
+export const Wrapper = styled.main<LogoProps>`
   ${({ theme, size }) => css`
     color: ${theme.colors.mainTxt};
     width: ${size};
-    height: ${size};
   `}
 `
