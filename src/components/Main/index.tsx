@@ -1,11 +1,12 @@
 import * as S from './styles'
 import Header from '../Header'
+import Heading from '../assets/Heading'
 
-const Main = ({ title = 'Fabio Morelli', description = 'descrição e ae' }) => {
+const Main = ({ description = 'descrição e ae' }) => {
   return (
     <S.Wrapper>
       <Header />
-      <h1>{title}</h1>
+      <Heading prevTit="A Ciencia do" posTit="Corpo" sizeLine="68vw" />
       <S.Descriptions>{description}</S.Descriptions>
     </S.Wrapper>
   )
