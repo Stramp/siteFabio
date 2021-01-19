@@ -4,6 +4,10 @@ export type {{pascalCase name}}Props = {
   color?: 'mainTxt'
 }
 
-const {{pascalCase name}} = ({ color = 'mainTxt' }: {{pascalCase name}}Props) => <S.Wrapper />
+const {{pascalCase name}} = ({ color = 'mainTxt' }: {{pascalCase name}}Props) => (
+  <S.Wrapper>
+    {{pascalCase name}}
+  </S.Wrapper>
+)
 
 export default {{pascalCase name}}

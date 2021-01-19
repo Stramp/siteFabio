@@ -50,10 +50,12 @@ const GlobalStyle = createGlobalStyle`
   }
   ${({ theme }) => css`
     html {
+      background-color: ${theme.colors.mainBg};
       font-size: 62.5%;
     }
     body {
       font-family: ${theme._d.font.family};
+      padding: 5px 10px;
     }
   `}
 `
