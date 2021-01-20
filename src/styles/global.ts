@@ -55,7 +55,6 @@ const GlobalStyle = createGlobalStyle`
     }
     body {
       font-family: ${theme._d.font.family};
-      padding: 5px 10px;
     }
   `}
 `

@@ -36,5 +36,14 @@ export default {
     overlay: 30,
     modal: 40,
     alwaysOnTop: 50
+  },
+  breakpoints: {
+    xMobile: '321px',
+    mMobile: '376px',
+    lMobile: '426px',
+    tablet: '769px',
+    laptop: '1025px',
+    desktop: '1441px',
+    ultrahd: '2561px'
   }
 }
