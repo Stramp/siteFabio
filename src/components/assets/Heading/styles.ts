@@ -5,7 +5,7 @@ import themeProps from '../../../styles/defaultTheme'
 
 const customMedia = generateMedia(themeProps.breakpoints)
 
-export const h2 = styled.h2<HeadingProps>`
+export const H2 = styled.h2<HeadingProps>`
   ${({ theme }) => css`
     color: ${theme.colors.mainTxt};
     font-size: ${theme._d.font.sizes.large};
@@ -16,16 +16,17 @@ export const h2 = styled.h2<HeadingProps>`
     gap: 0.5rem;
     flex-direction: row;
     margin-top: 1.5rem;
+    padding-left: 10px;
   `}
 `
 
-export const span = styled.span<HeadingProps>`
+export const Span = styled.span<HeadingProps>`
   ${({ theme }) => css`
     color: ${theme.colors.primary};
   `}
 `
 
-export const div = styled.div<HeadingProps>`
+export const Div = styled.div<HeadingProps>`
   ${({ theme, sizeLine }) => css`
     color: ${theme.colors.mainTxt};
     border-bottom: solid 1px ${theme.colors.mainTxt};
@@ -35,7 +36,7 @@ export const div = styled.div<HeadingProps>`
   `}
 `
 
-export const wraper = styled.div<HeadingProps>`
+export const Wraper = styled.div<HeadingProps>`
   display: flex;
   flex-direction: column;
 `

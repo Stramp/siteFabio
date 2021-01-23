@@ -11,13 +11,13 @@ const Heading = ({
   posTit = 'Sessao',
   sizeLine = '75vw'
 }: HeadingProps) => (
-  <S.wraper>
-    <S.h2>
+  <S.Wraper>
+    <S.H2>
       {prevTit}
-      <S.span> {posTit}</S.span>
-    </S.h2>
-    <S.div sizeLine={sizeLine} />
-  </S.wraper>
+      <S.Span> {posTit}</S.Span>
+    </S.H2>
+    <S.Div sizeLine={sizeLine} />
+  </S.Wraper>
 )
 
 export default Heading
