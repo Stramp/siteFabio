@@ -10,13 +10,14 @@ export const Wrapper = styled.main<NavigationProps>`
     color: ${theme.colors.mainTxt};
   `}
 `
-export const MenuSection = styled.div``
+export const MenuSection = styled.menu``
 
 export const Nav = styled.nav<NavigationProps>`
   ${({ hideOn, theme }) => css`
-    display: ${hideOn ? 'block' : 'none'};
+    opacity: ${hideOn ? '1' : '0'};
+    pointer-events: ${hideOn ? 'all' : 'none'};
     ${customMedia.greaterThan('lMobile')`
-      display: block;
+      opacity: 1;
     `}
     z-index: ${theme._d.layers.menu};
     background: ${'linear-gradient(-64deg,' +
@@ -24,14 +25,31 @@ export const Nav = styled.nav<NavigationProps>`
     ' 57%, ' +
     theme.colors.mainBgAlpha +
     ' 60%)'};
+    transform: ${hideOn ? 'translateX(0)' : 'translateX(10rem)'};
   `}
+  transition: all 0.3s ease-in;
   position: fixed;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding-top: 40px;
   ${customMedia.greaterThan('lMobile')`
     position: inherit;
     width: fit-content;
     height: fit-content;
+    flex-direction: row;
+  `}
+`
+
+export const Login = styled.div`
+  background: red;
+  width: 100%;
+  position: relative;
+  ${customMedia.greaterThan('lMobile')`
+    width: inherit;
   `}
 `
 
@@ -42,9 +60,6 @@ export const Ul = styled.ul<NavigationProps>`
   text-transform: uppercase;
   transition: all 250ms linear 0s;
   flex-direction: column;
-  position: fixed;
-  right: 0;
-  top: 65px;
   width: 30vw;
   min-width: 200px;
   height: fit-content;
@@ -104,6 +119,7 @@ export const Dash1 = styled.div<NavigationProps>`
     background: ${theme.colors.mainTxt};
     transform: ${hideOn ? 'rotate(-45deg) translate(-13px,8px)' : 'rotate(0)'};
   `}
+  transition: transform 0.3s ease-in;
   height: 5px;
   width: 100%;
   margin: 6px auto;
@@ -111,20 +127,23 @@ export const Dash1 = styled.div<NavigationProps>`
 
 export const Dash2 = styled.div<NavigationProps>`
   ${({ theme, hideOn }) => css`
-    display: ${hideOn ? 'none' : 'block'};
+    opacity: ${hideOn ? '0' : '1'};
     background: ${theme.colors.mainTxt};
   `}
+  transition: opacity 0.3s ease-in;
   height: 5px;
-  width: 100%;
+  width: 70%;
+  align-self: flex-end;
   margin: 6px auto;
 `
 export const Dash3 = styled.div<NavigationProps>`
   ${({ theme, hideOn }) => css`
     background: ${theme.colors.mainTxt};
     transform: ${hideOn
-      ? 'rotate(45deg) translate(1px,5px)'
+      ? 'rotate(45deg) translate(-7px,-2px)'
       : 'transform": "rotate(0)'};
   `}
+  transition: transform 0.3s ease-in;
   height: 5px;
   width: 100%;
   margin: 6px auto;
