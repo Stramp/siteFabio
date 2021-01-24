@@ -9,7 +9,8 @@ export const dark = {
     mainTxt: '#FAFAFA',
     lightGray: '#EAEAEA',
     gray: '#8F8F8F',
-    darkGray: '#2E2F42'
+    darkGray: '#2E2F42',
+    mainBgAlpha: '#0d0d0d00'
   }
 }
 export const light = {
@@ -21,7 +22,8 @@ export const light = {
     mainTxt: '#030517',
     lightGray: '#EAEAEA',
     gray: '#8F8F8F',
-    darkGray: '#2E2F42'
+    darkGray: '#2E2F42',
+    mainBgAlpha: '#FAFAFA00'
   }
 }
-export const currentTheme = dark
+export const currentTheme = light
