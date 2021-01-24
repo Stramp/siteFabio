@@ -7,7 +7,7 @@ export type NavigationProps = {
 }
 
 const Navigation = ({
-  listMenu = ['item1', 'item2', 'item3', 'item3', 'item3']
+  listMenu = ['item1', 'item2', 'item3', 'item3', 'item3', 'item3', 'item3']
 }: NavigationProps) => {
   const [booToggle, setBooToggle] = useState(false)
   function handToggle() {
@@ -30,6 +30,7 @@ const Navigation = ({
             )
           })}
         </S.Ul>
+        <S.Login>teste</S.Login>
       </S.Nav>
     </S.MenuSection>
   )
