@@ -28,7 +28,6 @@ export const Span = styled.span<HeadingProps>`
 
 export const Div = styled.div<HeadingProps>`
   ${({ theme, sizeLine }) => css`
-    color: ${theme.colors.mainTxt};
     border-bottom: solid 1px ${theme.colors.mainTxt};
     width: ${sizeLine};
     align-self: flex-end;

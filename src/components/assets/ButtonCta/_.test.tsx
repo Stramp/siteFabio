@@ -1,13 +1,15 @@
 import { screen } from '@testing-library/react'
 import ButtonCta from '.'
 import { renderWithTheme } from 'utils/tests/helpers'
+import { currentTheme } from 'styles/themes'
 
 describe('<ButtonCta />', () => {
   it('should render component', () => {
-    //renderizar componente utilizando o 'render'
-    //selecionar elemento a ser testado 'screen' (queries)
-    //expect nosso teste
-    renderWithTheme(<ButtonCta>{<b>teste</b>}</ButtonCta>)
-    expect(screen.getByText(/teste/i))
+    renderWithTheme(<ButtonCta index={200}>{<b>teste</b>}</ButtonCta>)
+    expect(screen.getByRole('button')).toHaveStyle({
+      color: currentTheme.colors.mainTxt,
+      backgroundColor: currentTheme.colors.primary
+    })
+    expect(screen.getByRole('button')).toBeInTheDocument()
   })
 })

@@ -16,7 +16,7 @@ const Heading = ({
       {prevTit}
       <S.Span> {posTit}</S.Span>
     </S.H2>
-    <S.Div sizeLine={sizeLine} />
+    <S.Div sizeLine={sizeLine} title="lineTitle" />
   </S.Wraper>
 )
 

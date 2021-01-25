@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components'
 import { generateMedia } from 'styled-media-query'
 import { NavigationProps } from '.'
 import themeProps from '../../../styles/defaultTheme'
+import { motion } from 'framer-motion'
 
 const customMedia = generateMedia(themeProps.breakpoints)
 
@@ -12,10 +13,8 @@ export const Wrapper = styled.main<NavigationProps>`
 `
 export const MenuSection = styled.menu``
 
-export const Nav = styled.nav<NavigationProps>`
-  ${({ hideOn, theme }) => css`
-    opacity: ${hideOn ? '1' : '0'};
-    pointer-events: ${hideOn ? 'all' : 'none'};
+export const Nav = styled(motion.nav)<NavigationProps>`
+  ${({ theme }) => css`
     ${customMedia.greaterThan('lMobile')`
       opacity: 1;
     `}
@@ -25,9 +24,7 @@ export const Nav = styled.nav<NavigationProps>`
     ' 57%, ' +
     theme.colors.mainBgAlpha +
     ' 60%)'};
-    transform: ${hideOn ? 'translateX(0)' : 'translateX(10rem)'};
   `}
-  transition: all 0.3s ease-in;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -53,12 +50,11 @@ export const Login = styled.div`
   `}
 `
 
-export const Ul = styled.ul<NavigationProps>`
+export const Ul = styled(motion.ul)<NavigationProps>`
   display: flex;
   letter-spacing: -0.2rem;
   font-size: 2.6rem;
   text-transform: uppercase;
-  transition: all 250ms linear 0s;
   flex-direction: column;
   width: 30vw;
   min-width: 200px;
@@ -73,7 +69,7 @@ export const Ul = styled.ul<NavigationProps>`
     min-height: inherit;
   `}
 `
-export const Li = styled.li`
+export const Li = styled(motion.li)<NavigationProps>`
   list-style: none;
   ${({ theme }) => css`
     background: ${theme.colors.mainBg};
@@ -119,18 +115,17 @@ export const Dash1 = styled.div<NavigationProps>`
     background: ${theme.colors.mainTxt};
     transform: ${hideOn ? 'rotate(-45deg) translate(-13px,8px)' : 'rotate(0)'};
   `}
-  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in-out;
   height: 5px;
   width: 100%;
   margin: 6px auto;
 `
-
 export const Dash2 = styled.div<NavigationProps>`
   ${({ theme, hideOn }) => css`
     opacity: ${hideOn ? '0' : '1'};
     background: ${theme.colors.mainTxt};
   `}
-  transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in-out;
   height: 5px;
   width: 70%;
   align-self: flex-end;
@@ -143,7 +138,7 @@ export const Dash3 = styled.div<NavigationProps>`
       ? 'rotate(45deg) translate(-7px,-2px)'
       : 'transform": "rotate(0)'};
   `}
-  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in-out;
   height: 5px;
   width: 100%;
   margin: 6px auto;
