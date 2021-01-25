@@ -8,6 +8,6 @@ describe('<Logo />', () => {
     //selecionar elemento a ser testado 'screen' (queries)
     //expect nosso teste
     renderWithTheme(<Logo />)
-    expect(screen.findAllByLabelText(/Fabio Morelli Trainee Art/i))
+    expect(screen.findByLabelText(/Fabio Morelli Trainee Art/i))
   })
 })
