@@ -5868,7 +5868,6 @@ eslint@^7.20.0:
   version "7.20.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.20.0.tgz#db07c4ca4eda2e2316e7aa57ac7fc91ec550bdc7"
   integrity sha512-qGi0CTcOGP2OtCQBgWZlQjcTuP0XkIpYFj25XtRTQSHC+umNnp7UMshr2G8SLsRFYDdAPFeHOsiteadmMH02Yw==
-
   dependencies:
     "@babel/code-frame" "7.12.11"
     "@eslint/eslintrc" "^0.3.0"
@@ -6475,10 +6474,10 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-framer-motion@^3.2.2-rc.1:
-  version "3.2.2-rc.1"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-3.2.2-rc.1.tgz#8fb334484505f01b6b9fc2ce6a770bd71507e53d"
-  integrity sha512-Q/b0f3mPmhZ3CZILCMaWKxZh+js3J0is4eF1IMyHrDcYvBENTlepfb0oE6VNLcw3pwxxtmvIP//N+4bWUzHI1w==
+framer-motion@^3.6.2:
+  version "3.6.2"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-3.6.2.tgz#f3190eddcd9e4e41dc31c9bb8cc8bdef03adba96"
+  integrity sha512-PMmybIGmIZVOb422NbUPIu919Rqm6MEKYyoOInExWdVFBsY+isbbu7/R60TZ+ru2eewLq3uTwntrYX04MxnAhg==
   dependencies:
     framesync "^5.0.0"
     hey-listen "^1.0.8"
