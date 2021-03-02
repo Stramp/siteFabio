@@ -16,7 +16,7 @@
   "dependencies": {
     "@types/react-router-dom": "^5.1.7",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "framer-motion": "^3.2.2-rc.1",
+    "framer-motion": "^3.9.0",
     "next-pwa": "^5.0.5",
     "next": "10.0.6",
     "react": "17.0.1",
