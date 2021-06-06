@@ -8,7 +8,7 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={T.dark}>
       <Head>
-        <title>Improve Trainer</title>
+        <title>Fabio Morelli Trainer</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Site Fabio Morelli Trainer" />
         <link rel="manifest" href="/manifest.json" />
