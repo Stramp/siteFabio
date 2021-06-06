@@ -1,6 +1,6 @@
 import * as S from './styles'
-import Navigation from '../assets/Navigation'
-import InstaLogo from '../assets/InstaLogo'
+import InstaLogo from 'components/assets/InstaLogo'
+import Navigation from 'components/assets/Navigation'
 
 const Header = () => (
   <S.Wrapper>
