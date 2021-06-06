@@ -7,10 +7,10 @@ export const Wrapper = styled(motion.button)<ButtonCtaProps>`
     background-color: ${theme.colors.primary};
     color: ${theme.colors.mainTxt};
   `}
-  margin-top: 900px;
   padding: 8px 25px;
   letter-spacing: 0.5px;
   font-weight: 600;
   border: 0;
+  margin-top: 1200px;
   border-radius: inherit;
 `

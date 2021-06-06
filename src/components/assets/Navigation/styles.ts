@@ -101,11 +101,11 @@ export const MenuToggle = styled.div`
   width: 40px;
   height: 40px;
   position: fixed;
-  right: 10px;
   ${customMedia.greaterThan('lMobile')`
     display: none;
-  `}
+    `}
   ${({ theme }) => css`
+    right: calc(${theme._d.grid.gutter} / 2);
     z-index: ${theme._d.layers.menu + 1};
   `}
 `

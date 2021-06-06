@@ -47,14 +47,20 @@ const GlobalStyle = createGlobalStyle`
     box-sizing:border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    &::before,
+    &::after{
+      box-sizing: inherit;
+    }
+
   }
   ${({ theme }) => css`
     html {
-      background-color: ${theme.colors.mainBg};
       font-size: 62.5%;
     }
     body {
+      background-color: ${theme.colors.mainBg};
       font-family: ${theme._d.font.family};
+      font-size: ${theme._d.font.sizes.medium};
     }
   `}
 `
