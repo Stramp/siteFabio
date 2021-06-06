@@ -6,7 +6,7 @@ import * as T from 'styles/themes'
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider theme={T.light}>
+    <ThemeProvider theme={T.dark}>
       <Head>
         <title>Improve Trainer</title>
         <link rel="icon" href="/favicon.ico" />
