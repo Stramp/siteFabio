@@ -6,9 +6,9 @@ import * as T from 'styles/themes'
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider theme={T.currentTheme}>
+    <ThemeProvider theme={T.light}>
       <Head>
-        <title>Fabio Morelli Trainer</title>
+        <title>Improve Trainer</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Site Fabio Morelli Trainer" />
         <link rel="manifest" href="/manifest.json" />
