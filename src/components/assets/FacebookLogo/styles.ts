@@ -5,6 +5,5 @@ export const Wrapper = styled.div<FacebookLogoProps>`
   ${({ theme, size }) => css`
     color: ${theme.colors.mainTxt};
     width: ${size};
-    height: ${size};
   `}
 `

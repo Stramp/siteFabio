@@ -12,7 +12,7 @@ export const dark = {
     darkGray: '#2E2F42',
     mainBgAlpha: '#0d0d0d00'
   }
-}
+} as const
 export const light = {
   _d,
   colors: {
@@ -25,5 +25,5 @@ export const light = {
     darkGray: '#2E2F42',
     mainBgAlpha: '#FAFAFA00'
   }
-}
+} as const
 export const currentTheme = dark

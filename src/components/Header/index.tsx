@@ -1,10 +1,14 @@
 import * as S from './styles'
-import InstaLogo from 'components/assets/InstaLogo'
 import Navigation from 'components/assets/Navigation'
+import TopUtilsBar from 'components/sections/TopUtilsBar'
+import Logo from 'components/assets/Logo'
 
 const Header = () => (
   <S.Wrapper>
-    <InstaLogo />
+    <TopUtilsBar />
+    <div className="logo">
+      <Logo />
+    </div>
     <Navigation />
   </S.Wrapper>
 )
