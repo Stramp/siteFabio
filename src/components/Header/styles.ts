@@ -1,9 +1,8 @@
 import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.header`
-  ${({ theme }) => css`
+  ${() => css`
     position: fixed;
-    top: calc(${theme._d.grid.gutter} / 4);
     width: 100%;
     max-width: 130rem;
     background: rgb(13, 13, 13);

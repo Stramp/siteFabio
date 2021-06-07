@@ -46,4 +46,4 @@ export default {
     desktop: '1441px',
     ultrahd: '2561px'
   }
-}
+} as const

@@ -3,7 +3,12 @@ import Header from '.'
 
 export default {
   title: 'Header',
-  component: Header
+  component: Header,
+  parameters: {
+    backgrounds: {
+      default: 'light'
+    }
+  }
 } as Meta
 
 export const basic: Story = () => <Header />
