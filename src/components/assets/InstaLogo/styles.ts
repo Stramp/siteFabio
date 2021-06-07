@@ -5,6 +5,5 @@ export const Wrapper = styled.div<InstaLogoProps>`
   ${({ theme, size }) => css`
     color: ${theme.colors.mainTxt};
     width: ${size};
-    height: ${size};
   `}
 `

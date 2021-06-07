@@ -17,6 +17,8 @@ export const Nav = styled(motion.nav)<NavigationProps>`
   ${({ theme }) => css`
     ${customMedia.greaterThan('lMobile')`
       opacity: 1;
+      z-index: unset;
+      background: unset;
     `}
     z-index: ${theme._d.layers.menu};
     background: ${'linear-gradient(-64deg,' +
@@ -105,7 +107,8 @@ export const MenuToggle = styled.div`
     display: none;
     `}
   ${({ theme }) => css`
-    right: calc(${theme._d.grid.gutter} / 2);
+    right: calc(${theme._d.grid.gutter} / 4);
+    margin-top: 0.8rem;
     z-index: ${theme._d.layers.menu + 1};
   `}
 `
