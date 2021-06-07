@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components'
-import { TopUtilsBarProps } from '.'
 
-export const Wrapper = styled.div<TopUtilsBarProps>`
+export const Wrapper = styled.div`
   ${({ theme }) => css`
     color: ${theme.colors.mainTxt};
     display: flex;
