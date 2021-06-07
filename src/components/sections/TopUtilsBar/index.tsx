@@ -2,12 +2,7 @@ import FacebookLogo from 'components/assets/FacebookLogo'
 import InstaLogo from 'components/assets/InstaLogo'
 import * as S from './styles'
 
-export type TopUtilsBarProps = {
-  color?: 'mainTxt'
-}
-
-const TopUtilsBar = ({ color = 'mainTxt' }: TopUtilsBarProps) => {
-  const date = new Date()
+const TopUtilsBar = () => {
   return (
     <S.Wrapper>
       <div className="social-media">

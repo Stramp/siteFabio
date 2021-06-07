@@ -1,4 +1,3 @@
-import { screen } from '@testing-library/react'
 import TopUtilsBar from '.'
 import { renderWithTheme } from 'utils/tests/helpers'
 

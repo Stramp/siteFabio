@@ -61,5 +61,10 @@
       "yarn lint --cache --fix",
       "yarn test --findRelatedTests --bail"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
