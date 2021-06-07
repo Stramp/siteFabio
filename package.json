@@ -59,7 +59,8 @@
   "lint-staged": {
     "src/**/*": [
       "yarn lint --cache --fix",
-      "yarn test --findRelatedTests --bail"
+      "yarn test --findRelatedTests --bail",
+      "tsc --project tsconfig.json --noEmit"
     ]
   },
   "husky": {
