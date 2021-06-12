@@ -4,8 +4,9 @@ import * as S from './styles'
 const settings = {
   dots: true,
   infinite: true,
-  speed: 500,
+  speed: 3000,
   autoplay: true,
+  autoplaySpeed: 6000,
   slidesToShow: 1,
   slidesToScroll: 1
 }
@@ -16,13 +17,13 @@ const MainBanner = () => (
       <Slider {...settings}>
         <div>
           <div className="banner-item">
-            <h3>titulo</h3>
+            <h3>#HARDWORK</h3>
             <p>treino duro</p>
           </div>
         </div>
         <div>
           <div className="banner-item">
-            <h3>titulo</h3>
+            <h3>healthStyle</h3>
             <p>treino duro</p>
           </div>
         </div>

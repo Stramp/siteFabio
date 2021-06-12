@@ -1,9 +1,11 @@
 import styled, { css } from 'styled-components'
 
-export const Wrapper = styled.main`
+export const Wrapper = styled.div`
   ${({ theme }) => css`
     color: ${theme.colors.mainTxt};
+    margin-top: ${theme._d.spacings.large};
     .banner-item {
+      position: relative;
       width: 100vw;
       max-width: 1300px;
       margin: auto;
@@ -14,6 +16,24 @@ export const Wrapper = styled.main`
       flex-direction: column;
       align-items: center;
       background-image: url('https://source.unsplash.com/random');
+      h3 {
+        font-size: ${theme._d.font.sizes.xxxlarge};
+        font-style: italic;
+        font-weight: ${theme._d.font.black};
+        z-index: 2;
+      }
+      p {
+        font-size: ${theme._d.font.sizes.large};
+        font-weight: ${theme._d.font.extraLight};
+        z-index: 2;
+      }
+      &::before {
+        content: '';
+        background-color: #00000091;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
     }
   `}
   .slick-dots, .slick-arrow {
