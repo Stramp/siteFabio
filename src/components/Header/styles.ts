@@ -12,6 +12,7 @@ export const Wrapper = styled.header`
       rgba(255, 255, 255, 0) 100%
     );
     height: 10rem;
+    z-index: 1;
     .logo {
       float: left;
       padding: 0.8rem;

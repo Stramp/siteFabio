@@ -1,10 +1,10 @@
 import * as S from './styles'
-import ButtonCta from 'components/assets/ButtonCta'
+import MainBanner from 'components/MainBanner'
 
 const Main = () => {
   return (
     <S.Wrapper>
-      <ButtonCta>Teste</ButtonCta>
+      <MainBanner />
     </S.Wrapper>
   )
 }
