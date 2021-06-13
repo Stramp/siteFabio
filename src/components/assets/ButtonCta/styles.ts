@@ -14,6 +14,8 @@ export const Wrapper = styled(motion.button)<ButtonCtaProps>`
     border-radius: inherit;
     display: flex;
     margin-left: auto;
+    font-weight: ${theme._d.font.bold};
+    font-size: ${theme._d.font.sizes.medium};
     margin-right: ${theme._d.spacings.xsmall};
   `}
 `

@@ -23,21 +23,20 @@ export const BannerItem = styled.div<MainBannerProps>`
       font-weight: ${theme._d.font.black};
       text-transform: uppercase;
       z-index: 2;
-      text-shadow: -2px -2px 5px ${theme.colors.mainBg},
-        2px 2px 10px ${theme.colors.mainBg}, 0 0 1.8rem ${theme.colors.mainBg};
+      color: white;
+      text-shadow: -2px -2px 15px black, 2px 2px 10px black, 0 0 1.8rem black;
     }
     p {
       font-size: ${theme._d.font.sizes.large};
       font-weight: ${theme._d.font.light};
       z-index: 2;
-      text-shadow: 0px 0px 0px ${theme.colors.mainTxt},
-        -1px -1px 2px ${theme.colors.mainBg}, 1px 1px 3px ${theme.colors.mainBg},
-        0 0 0.3rem ${theme.colors.mainBg};
+      color: white;
+      text-shadow: -2px -2px 15px black, 2px 2px 10px black, 0 0 1.8rem black;
     }
     &::before {
       content: '';
-      opacity: 0.4;
-      background-color: ${theme.colors.mainBg};
+      opacity: 0.6;
+      background-color: black;
       width: 100%;
       height: 100%;
       position: absolute;
