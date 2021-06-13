@@ -29,7 +29,8 @@ export const Wrapper = styled.div`
       }
       &::before {
         content: '';
-        background-color: #00000091;
+        opacity: 45%;
+        background-color: ${theme.colors.mainBg};
         width: 100%;
         height: 100%;
         position: absolute;
