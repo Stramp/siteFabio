@@ -28,6 +28,9 @@ export const Wrapper = styled.div`
         color: ${theme.colors.mainTxt};
         position: absolute;
         cursor: pointer;
+        background-color: ${theme.colors.mainBg};
+        border: 1px solid ${theme.colors.mainTxt};
+        border-radius: 99px;
       }
     }
   `}

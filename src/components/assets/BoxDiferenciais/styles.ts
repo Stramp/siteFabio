@@ -25,7 +25,7 @@ export const ItemList = styled.li<BoxDiferenciaisItemsProps>`
       letter-spacing: 0.15rem;
       width: 80%;
       max-height: 8rem;
-      text-shadow: 0px 0px 2px ${theme.colors.mainTxt},
+      text-shadow: 0px 0px 0px ${theme.colors.mainTxt},
         -2px -2px 3px ${theme.colors.mainBg}, 2px 2px 3px ${theme.colors.mainBg},
         0 0 0.5rem ${theme.colors.mainBg};
       z-index: 2;

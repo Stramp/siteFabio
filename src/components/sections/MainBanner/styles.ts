@@ -28,15 +28,15 @@ export const BannerItem = styled.div<MainBannerProps>`
     }
     p {
       font-size: ${theme._d.font.sizes.large};
-      font-weight: ${theme._d.font.extraLight};
+      font-weight: ${theme._d.font.light};
       z-index: 2;
       text-shadow: 0px 0px 0px ${theme.colors.mainTxt},
-        -1px -1px 2px ${theme.colors.mainBg}, 1px 1px 2px ${theme.colors.mainBg},
+        -1px -1px 2px ${theme.colors.mainBg}, 1px 1px 3px ${theme.colors.mainBg},
         0 0 0.3rem ${theme.colors.mainBg};
     }
     &::before {
       content: '';
-      opacity: 0.2;
+      opacity: 0.4;
       background-color: ${theme.colors.mainBg};
       width: 100%;
       height: 100%;
