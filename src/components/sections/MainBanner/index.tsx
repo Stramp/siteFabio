@@ -1,6 +1,5 @@
 import dynamic from 'next/dynamic'
 import * as S from './styles'
-
 const Slider = dynamic(() => import('react-slick'))
 
 const settings = {
