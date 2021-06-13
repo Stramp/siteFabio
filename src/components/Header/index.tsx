@@ -1,8 +1,7 @@
-import dynamic from 'next/dynamic'
 import * as S from './styles'
 import Logo from 'components/assets/Logo'
 import TopUtilsBar from 'components/sections/TopUtilsBar'
-const Navigation = dynamic(() => import('components/assets/Navigation'))
+import Navigation from 'components/assets/Navigation'
 
 const Header = () => (
   <S.Wrapper>
