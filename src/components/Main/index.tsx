@@ -1,5 +1,7 @@
+import dynamic from 'next/dynamic'
 import * as S from './styles'
-import MainBanner from 'components/MainBanner'
+
+const MainBanner = dynamic(() => import('components/sections/MainBanner'))
 
 const Main = () => {
   return (
