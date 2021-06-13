@@ -2,32 +2,48 @@ import dynamic from 'next/dynamic'
 import * as S from './styles'
 const Slider = dynamic(() => import('react-slick'))
 
+export type MainBannerProps = {
+  img?: string
+}
+
 const settings = {
   dots: true,
   infinite: true,
-  speed: 3000,
+  speed: 1000,
   autoplay: true,
-  autoplaySpeed: 6000,
+  autoplaySpeed: 5000,
   slidesToShow: 1,
   slidesToScroll: 1
 }
-
+const bannerList = [
+  {
+    titulo: '#hardwork',
+    subTitulo: 'é nois',
+    img: 'https://picsum.photos/800/600?random=1'
+  },
+  {
+    titulo: '#LifeStyle',
+    subTitulo: 'saude',
+    img: 'https://picsum.photos/800/600?random=2'
+  },
+  {
+    titulo: '#hardwork',
+    subTitulo: 'é nois',
+    img: 'https://picsum.photos/800/600?random=3'
+  }
+]
 const MainBanner = () => (
   <S.Wrapper>
     <div>
       <Slider {...settings}>
-        <div>
-          <div className="banner-item">
-            <h3>#HARDWORK</h3>
-            <p>treino duro</p>
+        {bannerList.map(({ titulo, subTitulo, img }, index) => (
+          <div key={index}>
+            <S.BannerItem img={img}>
+              <h3>{titulo}</h3>
+              <p>{subTitulo}</p>
+            </S.BannerItem>
           </div>
-        </div>
-        <div>
-          <div className="banner-item">
-            <h3>healthStyle</h3>
-            <p>treino duro</p>
-          </div>
-        </div>
+        ))}
       </Slider>
     </div>
   </S.Wrapper>

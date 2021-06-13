@@ -1,11 +1,11 @@
 import * as S from './styles'
 
 export type ButtonCtaProps = {
-  children: React.ReactNode
+  children?: React.ReactNode
   index?: number
 }
 
-const ButtonCta = ({ children = 'teste', index = 150 }: ButtonCtaProps) => {
+const ButtonCta = ({ children = 'teste', index = 0 }: ButtonCtaProps) => {
   const handler = (et: number) => {
     console.log('eae ? ', et)
     window.scrollTo({

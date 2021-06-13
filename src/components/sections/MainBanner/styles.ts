@@ -1,40 +1,54 @@
 import styled, { css } from 'styled-components'
+import { MainBannerProps } from '.'
+
+export const BannerItem = styled.div<MainBannerProps>`
+  ${({ theme, img }) => css`
+    position: relative;
+    width: 100vw;
+    max-width: 1300px;
+    margin: auto;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(${img});
+    background-color: ${theme.colors.mainBg};
+    background-position: center;
+
+    object-fit: cover;
+    h3 {
+      font-size: ${theme._d.font.sizes.xxxlarge};
+      font-style: italic;
+      font-weight: ${theme._d.font.black};
+      text-transform: uppercase;
+      z-index: 2;
+      text-shadow: -2px -2px 5px ${theme.colors.mainBg},
+        2px 2px 10px ${theme.colors.mainBg}, 0 0 1.8rem ${theme.colors.mainBg};
+    }
+    p {
+      font-size: ${theme._d.font.sizes.large};
+      font-weight: ${theme._d.font.light};
+      z-index: 2;
+      text-shadow: 0px 0px 0px ${theme.colors.mainTxt},
+        -1px -1px 2px ${theme.colors.mainBg}, 1px 1px 3px ${theme.colors.mainBg},
+        0 0 0.3rem ${theme.colors.mainBg};
+    }
+    &::before {
+      content: '';
+      opacity: 0.4;
+      background-color: ${theme.colors.mainBg};
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+  `}
+`
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
     color: ${theme.colors.mainTxt};
     margin-top: ${theme._d.spacings.large};
-    .banner-item {
-      position: relative;
-      width: 100vw;
-      max-width: 1300px;
-      margin: auto;
-      height: 300px;
-      object-fit: cover;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      background-image: url('https://source.unsplash.com/random');
-      h3 {
-        font-size: ${theme._d.font.sizes.xxxlarge};
-        font-style: italic;
-        font-weight: ${theme._d.font.black};
-        z-index: 2;
-      }
-      p {
-        font-size: ${theme._d.font.sizes.large};
-        font-weight: ${theme._d.font.extraLight};
-        z-index: 2;
-      }
-      &::before {
-        content: '';
-        background-color: #00000091;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-      }
-    }
   `}
   .slick-dots, .slick-arrow {
     display: none !important;
