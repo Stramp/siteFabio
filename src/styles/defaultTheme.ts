@@ -9,16 +9,19 @@ export default {
   font: {
     family:
       "Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+    extraLight: 200,
     light: 300,
     normal: 400,
     bold: 600,
+    black: 900,
     sizes: {
       xsmall: '1.2rem',
       small: '1.4rem',
       medium: '1.6rem',
       large: '1.8rem',
       xlarge: '2.2rem',
-      xxlarge: '2.8rem'
+      xxlarge: '2.8rem',
+      xxxlarge: '3.8rem'
     }
   },
   spacings: {
