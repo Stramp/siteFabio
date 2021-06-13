@@ -9,6 +9,7 @@ export const P = styled.p<DescriptionProps>`
     font-size: ${theme._d.font.sizes.xsmall};
     font-weight: ${theme._d.font.extraLight};
     letter-spacing: 0.05rem;
+    text-shadow: 0px 0px 0px ${theme.colors.mainTxt};
   `}
 `
 export const Button = styled.span<DescriptionProps>`
