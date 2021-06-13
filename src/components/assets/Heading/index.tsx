@@ -9,7 +9,7 @@ export type HeadingProps = {
 const Heading = ({
   prevTit = 'Titulo',
   posTit = 'Sessao',
-  sizeLine = '75vw'
+  sizeLine = '80%'
 }: HeadingProps) => (
   <S.Wraper>
     <S.H2>

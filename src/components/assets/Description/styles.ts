@@ -2,10 +2,12 @@ import styled, { css } from 'styled-components'
 import { DescriptionProps } from '.'
 
 export const P = styled.p<DescriptionProps>`
-  line-height: 1.3rem;
+  line-height: 2rem;
   padding: 0 10px;
   ${({ theme }) => css`
     color: ${theme.colors.mainTxt};
+    font-size: ${theme._d.font.sizes.xsmall};
+    font-weight: ${theme._d.font.extraLight};
   `}
 `
 export const Button = styled.span<DescriptionProps>`
