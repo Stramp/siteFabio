@@ -15,7 +15,7 @@ const ButtonCta = ({ children = 'teste', index = 0 }: ButtonCtaProps) => {
   }
   return (
     <S.Wrapper
-      whileHover={{ scale: 1.3 }}
+      whileHover={{ scale: 1.1 }}
       transition={{ duration: 0.5 }}
       onClick={() => handler(index)}
     >
