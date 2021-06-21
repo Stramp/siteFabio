@@ -14,8 +14,16 @@ export const Wrapper = styled.section<SectionEbookProps>`
     align-items: flex-end;
     .content {
       padding-bottom: ${theme._d.spacings.xsmall};
-      background-color: #ffffffc0;
       flex-grow: 1;
+      position: relative;
+      &::before {
+        content: '';
+        opacity: 0.6;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
     }
   `}
 `

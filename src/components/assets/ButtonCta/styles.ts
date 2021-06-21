@@ -4,6 +4,8 @@ import { motion } from 'framer-motion'
 
 export const Wrapper = styled(motion.button)<ButtonCtaProps>`
   ${({ theme }) => css`
+    z-index: 2;
+    position: relative;
     background-color: ${theme.colors.primary};
     color: ${theme.colors.mainTxt};
     padding: 8px 25px;

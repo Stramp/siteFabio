@@ -4,12 +4,12 @@ import { DescriptionProps } from '.'
 export const P = styled.p<DescriptionProps>`
   line-height: 2rem;
   padding: 0 10px;
+  z-index: 2;
   ${({ theme }) => css`
     color: ${theme.colors.mainTxt};
     font-size: ${theme._d.font.sizes.xsmall};
     font-weight: ${theme._d.font.normal};
     letter-spacing: 0.05rem;
-    text-shadow: 0px 0px 0px ${theme.colors.mainTxt};
   `}
 `
 export const Button = styled.span<DescriptionProps>`
