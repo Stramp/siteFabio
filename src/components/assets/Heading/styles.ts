@@ -7,6 +7,7 @@ const customMedia = generateMedia(themeProps.breakpoints)
 
 export const H2 = styled.h2<HeadingProps>`
   ${({ theme }) => css`
+    z-index: 2;
     color: ${theme.colors.mainTxt};
     font-size: ${theme._d.font.sizes.large};
     ${customMedia.greaterThan('lMobile')`
