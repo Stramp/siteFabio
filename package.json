@@ -16,6 +16,7 @@
     "tscheck": "tsc --project tsconfig.json --noEmit"
   },
   "dependencies": {
+    "@popmotion/popcorn": "^0.4.4",
     "@types/react-router-dom": "^5.1.7",
     "eslint-plugin-react-hooks": "^4.2.0",
     "framer-motion": "^4.1.17",
