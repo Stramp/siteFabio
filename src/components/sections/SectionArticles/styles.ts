@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components'
-import { SectionArticlesProps } from '.'
 
-export const Wrapper = styled.main<SectionArticlesProps>`
+export const Wrapper = styled.main`
   ${({ theme }) => css`
     margin-top: ${theme._d.spacings.medium};
     color: ${theme.colors.mainTxt};
