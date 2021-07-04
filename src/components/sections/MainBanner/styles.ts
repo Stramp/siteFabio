@@ -25,12 +25,14 @@ export const BannerItem = styled.div<MainBannerProps>`
       z-index: 2;
       color: white;
       text-shadow: -2px -2px 15px black, 2px 2px 10px black, 0 0 1.8rem black;
+      text-align: center;
     }
     p {
       font-size: ${theme._d.font.sizes.large};
       font-weight: ${theme._d.font.light};
       z-index: 2;
       color: white;
+      text-align: center;
       text-shadow: -2px -2px 15px black, 2px 2px 10px black, 0 0 1.8rem black;
     }
     &::before {
