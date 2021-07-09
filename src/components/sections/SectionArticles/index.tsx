@@ -1,11 +1,19 @@
-import Accordion from 'components/Accordion'
-import Heading from 'components/assets/Heading'
+import Accordion, { AccordionItemProps } from 'components/Accordion'
+import Heading, { HeadingProps } from 'components/assets/Heading'
 import * as S from './styles'
 
-const SectionArticles = () => (
+export interface AccordionSectionProps extends HeadingProps {
+  listItems?: AccordionItemProps['item'][]
+}
+
+const SectionArticles = ({
+  listItems,
+  prevTit,
+  posTit
+}: AccordionSectionProps) => (
   <S.Wrapper>
-    <Heading prevTit="A Ciência do" posTit="CORPO" />
-    <Accordion />
+    <Heading prevTit={prevTit} posTit={posTit} />
+    <Accordion listItems={listItems} />
   </S.Wrapper>
 )
 
