@@ -7,9 +7,9 @@ export const BannerItem = styled.div<BannerListProps>`
     width: 100vw;
     max-width: 1300px;
     margin: auto;
-    height: 300px;
+    height: 90vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: column;
     align-items: center;
     background-image: url(${img});
@@ -17,7 +17,6 @@ export const BannerItem = styled.div<BannerListProps>`
     background-position: center;
     background-size: cover;
 
-    object-fit: cover;
     h3 {
       font-size: ${theme._d.font.sizes.xxxlarge};
       font-style: italic;
@@ -34,15 +33,11 @@ export const BannerItem = styled.div<BannerListProps>`
       z-index: 2;
       color: white;
       text-align: center;
-      text-shadow: -2px -2px 15px black, 2px 2px 10px black, 0 0 1.8rem black;
-    }
-    &::before {
-      content: '';
-      opacity: 0.6;
-      background-color: black;
       width: 100%;
-      height: 100%;
-      position: absolute;
+      padding: ${theme._d.spacings.xxsmall}
+        calc(${theme._d.spacings.xxsmall} / 2);
+      text-shadow: -2px -2px 15px black, 2px 2px 10px black, 0 0 1.8rem black;
+      background-color: #000000ad;
     }
   `}
 `

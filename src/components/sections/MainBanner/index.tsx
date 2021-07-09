@@ -1,9 +1,11 @@
+import Description from 'components/assets/Description'
 import dynamic from 'next/dynamic'
 import * as S from './styles'
 const Slider = dynamic(() => import('react-slick'))
 
 export type BannerProps = {
   bannerList?: BannerListProps[]
+  text?: string
 }
 export type BannerListProps = {
   titulo?: string
@@ -20,7 +22,7 @@ const settings = {
   slidesToScroll: 1
 }
 
-const MainBanner = ({ bannerList }: BannerProps) => {
+const MainBanner = ({ bannerList, text }: BannerProps) => {
   return (
     <S.Wrapper>
       <div>
@@ -35,6 +37,7 @@ const MainBanner = ({ bannerList }: BannerProps) => {
           ))}
         </Slider>
       </div>
+      <Description text={text} size={550} />
     </S.Wrapper>
   )
 }

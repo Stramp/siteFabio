@@ -19,7 +19,10 @@ const Main = () => {
 
   return (
     <S.Wrapper>
-      <MainBanner bannerList={dataList?.listBanner} />
+      <MainBanner
+        bannerList={dataList?.main.listBanner}
+        text={dataList?.main.description}
+      />
       <SectionTreinos />
       <SectionEbook text="Muito bem! Então salvei o arquivo HTML e esse CSS de planos também já está pronto, basta vir aqui no cabeçalho e colocar “link href=”css/planos.css” ”. Vou colocar o “rel=”stylesheet” ”. Salvei o HTML, agora vamos ver como é que ficou no nosso navegador. Então eu vou voltar aqui, recarreguei o navegador, desci e agora o “planos” está pronto." />
       <SectionCoach />

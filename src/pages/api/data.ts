@@ -31,34 +31,51 @@ const data: DataProps = {
       }
     ]
   },
-  listBanner: [
-    {
-      titulo: 'Mais de 13 anos',
-      subTitulo: 'em Assessoria Fitness',
-      img: 'https://user-images.githubusercontent.com/78149085/124521820-4cb39500-ddc7-11eb-8a8d-6c0bcb6bd572.png'
-    },
-    {
-      titulo: 'DIFERENCIAL',
-      subTitulo:
-        'Método baseado nas suas características individuais e estilo de vida. Com ampla base científica',
-      img: 'https://user-images.githubusercontent.com/78149085/124521730-fd6d6480-ddc6-11eb-9ea6-9eb464bb60a3.png'
-    },
-    {
-      titulo: 'Mais de 500 casos de sucesso!',
-      subTitulo: 'Venha conhecer a metodologia!',
-      img: 'https://user-images.githubusercontent.com/78149085/124521904-943a2100-ddc7-11eb-8d8f-f81b8afa00a9.png'
-    },
-    {
-      titulo: 'Satisfação garantida',
-      subTitulo: 'ou seu dinheiro de volta consulte as condições.',
-      img: 'https://user-images.githubusercontent.com/78149085/124521751-0bbb8080-ddc7-11eb-9386-8ab9697d5665.png'
-    },
-    {
-      titulo: 'Atendimento!',
-      subTitulo: 'Online e Presencial',
-      img: 'https://user-images.githubusercontent.com/78149085/124521875-7cfb3380-ddc7-11eb-90ea-038cff554047.png'
-    }
-  ]
+  main: {
+    description: `
+    <p>Você já se deparou com aquelas pessoas que treinam por anos e anos e estão sempre do mesmo jeito?<br>
+    Não emagrecem, não ficam com os músculos aparentes e não mudam! Já aconteceu isso com você?</p>
+    <br>
+    <ul style="margin-left: 2.8rem;">
+      <li>Está processo de emagrecimento estagnado?</li>
+      <li>Não consegue ganhar massa muscular?</li>
+      <li>Não evolui no treino e no ganho de força e resistência?</li>
+    </ul>
+    <br>
+    <p>Olha só: Se tem uma coisa que posso te garantir, é que o corpo humano, quando recebe os estímulos certos, vai necessariamente se adaptar! Em teoria do treinamento chamamos isso de princípio da adaptabilidade.</p>
+    <br>
+    <p>Mas se não for considerado as suas características individuais, como condição de saúde, nível de treinamento, sono, hábitos, preferencias, rotina de trabalho, alimentação, entre outros, dificilmente terá resultados, podendo ainda prejudicar o seu rendimento, desenvolver uma lesão e desanimar no meio do processo.</p>
+    <br>
+    <p>A minha proposta é oferecer uma consultoria individualizada, te entregando o que há de mais atual na ciência do treinamento e nutrição esportiva e obviamente considerando todas as suas características individuais para que você conquiste a saúde e o corpo que tanto deseja.</p>`,
+    listBanner: [
+      {
+        titulo: 'Mais de 13 anos',
+        subTitulo: 'em Assessoria Fitness',
+        img: 'https://images.unsplash.com/photo-1550345332-09e3ac987658?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80'
+      },
+      {
+        titulo: 'DIFERENCIAL',
+        subTitulo:
+          'Método baseado nas suas características individuais e estilo de vida. Com ampla base científica',
+        img: 'https://images.unsplash.com/photo-1579758682665-53a1a614eea6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1334&q=80'
+      },
+      {
+        titulo: 'Mais de 500 casos de sucesso!',
+        subTitulo: 'Venha conhecer a metodologia!',
+        img: 'https://images.unsplash.com/photo-1567598508481-65985588e295?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+      },
+      {
+        titulo: 'Satisfação garantida',
+        subTitulo: 'ou seu dinheiro de volta consulte as condições.',
+        img: 'https://images.unsplash.com/photo-1577221084712-45b0445d2b00?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1343&q=80'
+      },
+      {
+        titulo: 'Atendimento!',
+        subTitulo: 'Online e Presencial',
+        img: 'https://images.unsplash.com/photo-1597452485677-d661670d9640?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80'
+      }
+    ]
+  }
 }
 export default (req: NextApiRequest, res: NextApiResponse) => {
   res.status(200).json(data)

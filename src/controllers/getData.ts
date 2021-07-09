@@ -17,5 +17,8 @@ export type DataProps = {
     title: string
     list: AccordionItemProps['item'][]
   }
-  listBanner: BannerListProps[]
+  main: {
+    description: string
+    listBanner: BannerListProps[]
+  }
 }
