@@ -15,6 +15,7 @@ export const BannerItem = styled.div<MainBannerProps>`
     background-image: url(${img});
     background-color: ${theme.colors.mainBg};
     background-position: center;
+    background-size: cover;
 
     object-fit: cover;
     h3 {
