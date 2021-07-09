@@ -6,9 +6,9 @@ export type BannerProps = {
   bannerList?: BannerListProps[]
 }
 export type BannerListProps = {
-  titulo: string
-  subTitulo: string
-  img: string
+  titulo?: string
+  subTitulo?: string
+  img?: string
 }
 const settings = {
   dots: true,
