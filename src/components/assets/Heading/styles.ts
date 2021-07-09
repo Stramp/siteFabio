@@ -9,14 +9,15 @@ export const H2 = styled.h2<HeadingProps>`
   ${({ theme }) => css`
     z-index: 2;
     color: ${theme.colors.mainTxt};
-    font-size: ${theme._d.font.sizes.large};
+    font-size: ${theme._d.font.sizes.xlarge};
     ${customMedia.greaterThan('lMobile')`
-      font-size: ${theme._d.font.sizes.xxlarge};
+      font-size: ${theme._d.font.sizes.xxxlarge};
     `}
     display: flex;
     gap: 0.5rem;
     flex-direction: row;
     margin-top: 1.5rem;
+    letter-spacing: calc(${theme._d.spacings.xxsmall} / 100);
     padding-left: 10px;
   `}
 `

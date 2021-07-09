@@ -8,14 +8,14 @@ describe('<Heading />', () => {
   it('should render component font-size currentTheme sizes default Mobile', () => {
     renderWithTheme(<Heading prevTit="tit" posTit="teste" sizeLine="100vw" />)
     expect(screen.getByRole('heading', { name: /teste/i })).toHaveStyle({
-      fontSize: currentTheme._d.font.sizes.large
+      fontSize: currentTheme._d.font.sizes.xlarge
     })
   })
   it('should render component font-size currentTheme sizes in Desktop', () => {
     renderWithTheme(<Heading prevTit="tit" posTit="teste" sizeLine="100vw" />)
     expect(screen.getByRole('heading', { name: /teste/i })).toHaveStyleRule(
       'font-size',
-      currentTheme._d.font.sizes.xxlarge,
+      currentTheme._d.font.sizes.xxxlarge,
       {
         media: '(min-width: 426px)'
       }
