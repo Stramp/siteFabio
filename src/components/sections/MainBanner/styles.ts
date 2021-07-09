@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
-import { MainBannerProps } from '.'
+import { BannerListProps } from '.'
 
-export const BannerItem = styled.div<MainBannerProps>`
+export const BannerItem = styled.div<BannerListProps>`
   ${({ theme, img }) => css`
     position: relative;
     width: 100vw;

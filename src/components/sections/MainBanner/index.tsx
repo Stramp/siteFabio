@@ -1,13 +1,15 @@
-import { BannerListProps, getBanners } from 'controllers/getDados'
 import dynamic from 'next/dynamic'
-import { useEffect, useState } from 'react'
 import * as S from './styles'
 const Slider = dynamic(() => import('react-slick'))
 
-export type MainBannerProps = {
+export type BannerProps = {
+  bannerList?: BannerListProps[]
+}
+export type BannerListProps = {
+  titulo?: string
+  subTitulo?: string
   img?: string
 }
-
 const settings = {
   dots: true,
   infinite: true,
@@ -18,19 +20,12 @@ const settings = {
   slidesToScroll: 1
 }
 
-const MainBanner = () => {
-  const [bannerList, setBannerList] = useState<BannerListProps[]>([])
-  useEffect(() => {
-    ;(async () => {
-      const dados: BannerListProps[] = await getBanners()
-      setBannerList(dados)
-    })()
-  }, [])
+const MainBanner = ({ bannerList }: BannerProps) => {
   return (
     <S.Wrapper>
       <div>
         <Slider {...settings}>
-          {bannerList.map(({ titulo, subTitulo, img }, index) => (
+          {bannerList?.map(({ titulo, subTitulo, img }, index) => (
             <div key={index}>
               <S.BannerItem img={img}>
                 <h3>{titulo}</h3>
