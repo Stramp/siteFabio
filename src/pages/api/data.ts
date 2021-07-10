@@ -3,7 +3,8 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 
 const data: DataProps = {
   accordion: {
-    title: 'FAQ',
+    prevTit: 'FAQ',
+    posTit: '(DÚVIDAS)',
     list: [
       {
         title: 'Quanto tempo demora para o treino ficar pronto?',
@@ -73,6 +74,32 @@ const data: DataProps = {
         titulo: 'Atendimento!',
         subTitulo: 'Online e Presencial',
         img: 'https://images.unsplash.com/photo-1597452485677-d661670d9640?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80'
+      }
+    ]
+  },
+  steps: {
+    prevTit: '5',
+    posTit: 'passos',
+    stepsList: [
+      {
+        img: 'https://picsum.photos/400/100?random=1',
+        txt: 'Escolha o melhor plano de consultoria para você'
+      },
+      {
+        img: 'https://picsum.photos/500/300?random=2',
+        txt: 'Entre em contato diretamente comigo via whatsapp'
+      },
+      {
+        img: 'https://picsum.photos/500/200?random=3',
+        txt: 'Batemos um papo para eu analisar seu caso individual'
+      },
+      {
+        img: 'https://picsum.photos/400/100?random=4',
+        txt: 'Definir treino e alimentação'
+      },
+      {
+        img: 'https://picsum.photos/400/100?random=5',
+        txt: 'Começar a treinar com foco e dedicação contando com meu apoio e instruções'
       }
     ]
   }

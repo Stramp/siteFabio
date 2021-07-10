@@ -40,7 +40,7 @@ export const ItemList = styled.li<BoxDiferenciaisItemsProps>`
     }
     &::before {
       content: '';
-      opacity: 0.7;
+      opacity: 0.6;
       background-color: black;
       width: 100%;
       height: 10rem;

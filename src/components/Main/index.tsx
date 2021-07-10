@@ -23,13 +23,17 @@ const Main = () => {
         bannerList={dataList?.main.listBanner}
         text={dataList?.main.description}
       />
-      <SectionTreinos />
+      <SectionTreinos
+        prevTit={dataList?.steps.prevTit}
+        posTit={dataList?.steps.posTit}
+        stepsList={dataList?.steps.stepsList}
+      />
       <SectionEbook text="Muito bem! Então salvei o arquivo HTML e esse CSS de planos também já está pronto, basta vir aqui no cabeçalho e colocar “link href=”css/planos.css” ”. Vou colocar o “rel=”stylesheet” ”. Salvei o HTML, agora vamos ver como é que ficou no nosso navegador. Então eu vou voltar aqui, recarreguei o navegador, desci e agora o “planos” está pronto." />
       <SectionCoach />
       <SectionArticles
         listItems={dataList?.accordion.list}
-        prevTit={dataList?.accordion.title}
-        posTit=""
+        prevTit={dataList?.accordion.prevTit}
+        posTit={dataList?.accordion.posTit}
       />
     </S.Wrapper>
   )

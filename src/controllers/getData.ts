@@ -1,4 +1,5 @@
 import { AccordionItemProps } from 'components/Accordion'
+import { BoxDiferenciaisItemsProps } from 'components/assets/BoxDiferenciais'
 import { BannerListProps } from 'components/sections/MainBanner'
 
 export const getData = async () => {
@@ -14,11 +15,17 @@ export const getData = async () => {
 }
 export type DataProps = {
   accordion: {
-    title: string
+    prevTit: string
+    posTit: string
     list: AccordionItemProps['item'][]
   }
   main: {
     description: string
     listBanner: BannerListProps[]
+  }
+  steps: {
+    prevTit: string
+    posTit: string
+    stepsList: BoxDiferenciaisItemsProps[]
   }
 }
