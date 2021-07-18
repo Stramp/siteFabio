@@ -29,9 +29,9 @@ export type DataProps = {
     stepsList: BoxDiferenciaisItemsProps[]
   }
   plans: {
-    prevTit: string
-    posTit: string
-    listPlans: [
+    prevTit?: string
+    posTit?: string
+    listPlans?: [
       {
         id: string
         uri: string
