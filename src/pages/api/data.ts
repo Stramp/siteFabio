@@ -102,6 +102,42 @@ const data: DataProps = {
         txt: 'Começar a treinar com foco e dedicação contando com meu apoio e instruções'
       }
     ]
+  },
+  plans: {
+    prevTit: 'Nossos',
+    posTit: 'Planos',
+    listPlans: [
+      {
+        id: 'dc',
+        uri: 'https://images.unsplash.com/photo-1594381898411-846e7d193883?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
+        price: 'string',
+        title: 'string',
+        planTime: 'string',
+        list: ['string', 'string', 'string'],
+        pointOfInterest: 0,
+        backgroundColor: '#000'
+      },
+      {
+        id: 'af',
+        uri: 'https://images.unsplash.com/photo-1594381898411-846e7d193883?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
+        price: 'string',
+        title: 'string',
+        planTime: 'string',
+        list: ['string', 'string', 'string'],
+        pointOfInterest: 80,
+        backgroundColor: '#000'
+      },
+      {
+        id: 'teste',
+        uri: 'https://images.unsplash.com/photo-1594381898411-846e7d193883?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
+        price: 'string',
+        title: 'string',
+        planTime: 'string',
+        list: ['string', 'string', 'string'],
+        pointOfInterest: 0,
+        backgroundColor: '#000'
+      }
+    ]
   }
 }
 export default (req: NextApiRequest, res: NextApiResponse) => {

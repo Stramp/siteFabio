@@ -28,4 +28,20 @@ export type DataProps = {
     posTit: string
     stepsList: BoxDiferenciaisItemsProps[]
   }
+  plans: {
+    prevTit: string
+    posTit: string
+    listPlans: [
+      {
+        id: string
+        uri: string
+        price: string
+        title: string
+        planTime: string
+        list: string[]
+        pointOfInterest: number
+        backgroundColor: string
+      }
+    ]
+  }
 }
