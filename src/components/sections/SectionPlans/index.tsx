@@ -4,7 +4,7 @@ import Cards from 'components/Cards'
 import * as S from './styles'
 
 export interface SectionPlansProps extends HeadingProps {
-  listPlans: CardProps[]
+  listPlans?: CardProps[]
 }
 
 const SectionPlans = ({ prevTit, posTit, listPlans }: SectionPlansProps) => (
