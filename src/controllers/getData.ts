@@ -1,5 +1,6 @@
 import { AccordionItemProps } from 'components/Accordion'
 import { BoxDiferenciaisItemsProps } from 'components/assets/BoxDiferenciais'
+import { CardProps } from 'components/CardPage'
 import { BannerListProps } from 'components/sections/MainBanner'
 
 export const getData = async () => {
@@ -29,19 +30,8 @@ export type DataProps = {
     stepsList: BoxDiferenciaisItemsProps[]
   }
   plans: {
-    prevTit?: string
-    posTit?: string
-    listPlans?: [
-      {
-        id: string
-        uri: string
-        price: string
-        title: string
-        planTime: string
-        list: string[]
-        pointOfInterest: number
-        backgroundColor: string
-      }
-    ]
+    prevTit: string
+    posTit: string
+    listPlans?: CardProps[]
   }
 }

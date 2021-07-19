@@ -108,32 +108,52 @@ const data: DataProps = {
     posTit: 'Planos',
     listPlans: [
       {
-        id: 'dc',
-        uri: 'https://images.unsplash.com/photo-1594381898411-846e7d193883?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
-        price: 'string',
-        title: 'string',
-        planTime: 'string',
-        list: ['string', 'string', 'string'],
+        id: 'st',
+        uri: 'https://images.unsplash.com/photo-1517130038641-a774d04afb3c',
+        price: '197,00',
+        title: 'Start',
+        planTime: 'mensal',
+        list: [
+          '1 Programa de treino personalizado',
+          'Suporte exclusivo c/ Gustavo Mattos por Whatsapp',
+          'Ptrainer - Aplicativo oficial da Consultoria Fitness',
+          'Acesso ao FreeFitness pelo período de 1 mês',
+          'KIT LIFESTYLE '
+        ],
         pointOfInterest: 0,
-        backgroundColor: '#000'
+        backgroundColor: 'red'
       },
       {
-        id: 'af',
-        uri: 'https://images.unsplash.com/photo-1594381898411-846e7d193883?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
-        price: 'string',
-        title: 'string',
-        planTime: 'string',
-        list: ['string', 'string', 'string'],
+        id: 'tt',
+        uri: 'https://picsum.photos/1920/1080?random=7',
+        price: '397,00',
+        title: 'TRANSFORMAÇÃO TOTAL',
+        planTime: 'TRIMESTRAL',
+        list: [
+          '3 Programas de treino personalizado',
+          'Programa The Habit Code - Curso completo sobre mudança de hábitos, com Carlos Araújo',
+          'Suporte exclusivo c/ Gustavo Mattos por Whatsapp',
+          'Ptrainer - Aplicativo oficial da Consultoria Fitness',
+          'Acesso ao FreeFitness pelo período de 3 meses',
+          'KIT LIFESTYLE'
+        ],
         pointOfInterest: 80,
         backgroundColor: '#000'
       },
       {
-        id: 'teste',
-        uri: 'https://images.unsplash.com/photo-1594381898411-846e7d193883?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
-        price: 'string',
-        title: 'string',
-        planTime: 'string',
-        list: ['string', 'string', 'string'],
+        id: 'ev',
+        uri: 'https://picsum.photos/1920/1080?random=8',
+        price: '697,00',
+        title: 'ESTILO DE VIDA',
+        planTime: 'SEMESTRAL',
+        list: [
+          '6 programas de treino personalizado',
+          'Programa The Habit Code - Curso completo sobre mudança de hábitos, com Carlos Araújo',
+          'Suporte exclusivo c/ Gustavo Mattos por Whatsapp',
+          'Ptrainer - Aplicativo oficial da Consultoria Fitness',
+          'Acesso ao FreeFitness pelo período de 6 meses',
+          'KIT LIFESTYLE'
+        ],
         pointOfInterest: 0,
         backgroundColor: '#000'
       }
