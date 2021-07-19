@@ -4,7 +4,7 @@ import * as S from './styles'
 
 export type CardPageProps = {
   selectedItem?: CardProps
-  setSelectedItem?: Dispatch<SetStateAction<CardProps | null>>
+  setSelectedItem: Dispatch<SetStateAction<CardProps | null>>
 }
 export type CardProps = {
   id?: string
