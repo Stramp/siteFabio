@@ -6,6 +6,7 @@ import SectionCoach from 'components/sections/SectionCoach'
 import SectionArticles from 'components/sections/SectionArticles'
 import { useEffect, useState } from 'react'
 import { getData, DataProps } from 'controllers/getData'
+import SectionPlans from 'components/sections/SectionPlans'
 
 const Main = () => {
   const [dataList, setDataList] = useState<DataProps>()
@@ -27,6 +28,11 @@ const Main = () => {
         prevTit={dataList?.steps.prevTit}
         posTit={dataList?.steps.posTit}
         stepsList={dataList?.steps.stepsList}
+      />
+      <SectionPlans
+        prevTit={dataList?.plans.prevTit}
+        posTit={dataList?.plans.posTit}
+        listPlans={dataList?.plans.listPlans}
       />
       <SectionEbook text="Muito bem! Então salvei o arquivo HTML e esse CSS de planos também já está pronto, basta vir aqui no cabeçalho e colocar “link href=”css/planos.css” ”. Vou colocar o “rel=”stylesheet” ”. Salvei o HTML, agora vamos ver como é que ficou no nosso navegador. Então eu vou voltar aqui, recarreguei o navegador, desci e agora o “planos” está pronto." />
       <SectionCoach />

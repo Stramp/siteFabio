@@ -102,6 +102,62 @@ const data: DataProps = {
         txt: 'Começar a treinar com foco e dedicação contando com meu apoio e instruções'
       }
     ]
+  },
+  plans: {
+    prevTit: 'Nossos',
+    posTit: 'Planos',
+    listPlans: [
+      {
+        id: 'st',
+        uri: 'https://images.unsplash.com/photo-1517130038641-a774d04afb3c',
+        price: '197,00',
+        title: 'Start',
+        planTime: 'mensal',
+        list: [
+          '1 Programa de treino personalizado',
+          'Suporte exclusivo c/ Gustavo Mattos por Whatsapp',
+          'Ptrainer - Aplicativo oficial da Consultoria Fitness',
+          'Acesso ao FreeFitness pelo período de 1 mês',
+          'KIT LIFESTYLE '
+        ],
+        pointOfInterest: 0,
+        backgroundColor: 'red'
+      },
+      {
+        id: 'tt',
+        uri: 'https://picsum.photos/1920/1080?random=7',
+        price: '397,00',
+        title: 'TRANSFORMAÇÃO TOTAL',
+        planTime: 'TRIMESTRAL',
+        list: [
+          '3 Programas de treino personalizado',
+          'Programa The Habit Code - Curso completo sobre mudança de hábitos, com Carlos Araújo',
+          'Suporte exclusivo c/ Gustavo Mattos por Whatsapp',
+          'Ptrainer - Aplicativo oficial da Consultoria Fitness',
+          'Acesso ao FreeFitness pelo período de 3 meses',
+          'KIT LIFESTYLE'
+        ],
+        pointOfInterest: 80,
+        backgroundColor: '#000'
+      },
+      {
+        id: 'ev',
+        uri: 'https://picsum.photos/1920/1080?random=8',
+        price: '697,00',
+        title: 'ESTILO DE VIDA',
+        planTime: 'SEMESTRAL',
+        list: [
+          '6 programas de treino personalizado',
+          'Programa The Habit Code - Curso completo sobre mudança de hábitos, com Carlos Araújo',
+          'Suporte exclusivo c/ Gustavo Mattos por Whatsapp',
+          'Ptrainer - Aplicativo oficial da Consultoria Fitness',
+          'Acesso ao FreeFitness pelo período de 6 meses',
+          'KIT LIFESTYLE'
+        ],
+        pointOfInterest: 0,
+        backgroundColor: '#000'
+      }
+    ]
   }
 }
 export default (req: NextApiRequest, res: NextApiResponse) => {
