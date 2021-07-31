@@ -3,29 +3,53 @@ import * as S from './styles'
 
 export type DescriptionProps = {
   text?: string
+  size?: number
 }
 
-const Description = ({ text = 'texto de descrição' }: DescriptionProps) => {
+const Description = ({
+  text = 'texto de descrição',
+  size = 180
+}: DescriptionProps) => {
   const [hideOnButton, sethideOnButton] = useState(false)
   const handleButton = () => {
     sethideOnButton(!hideOnButton)
   }
 
-  const DescriptionWithMore = () => (
-    <S.P>
-      {!hideOnButton ? text.substring(0, 180) + '...' : text}
-      {!hideOnButton ? (
-        <S.Button onClick={handleButton}>Saiba Mais</S.Button>
-      ) : (
-        <S.Button onClick={handleButton}>Recolher</S.Button>
-      )}
-    </S.P>
+  const DescriptionWithMore = () => {
+    const textHtml = (hOb: boolean) => {
+      if (hOb) {
+        return text.substring(0, size) + '...'
+      } else {
+        return text
+      }
+    }
+    return (
+      <>
+        <S.P
+          dangerouslySetInnerHTML={{
+            __html: textHtml(!hideOnButton)
+          }}
+        />
+
+        {!hideOnButton ? (
+          <S.Button onClick={handleButton}>Saiba Mais</S.Button>
+        ) : (
+          <S.Button onClick={handleButton}>Recolher</S.Button>
+        )}
+      </>
+    )
+  }
+  const DescriptionNoMore = () => (
+    <S.P
+      dangerouslySetInnerHTML={{
+        __html: text
+      }}
+    />
   )
-  const DescriptionNoMore = () => <S.P>{text}</S.P>
 
   return (
     <S.Div>
-      {text.length > 180 ? <DescriptionWithMore /> : <DescriptionNoMore />}
+      {text.length > size ? <DescriptionWithMore /> : <DescriptionNoMore />}
     </S.Div>
   )
 }
