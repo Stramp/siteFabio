@@ -1,3 +1,4 @@
+import ButtonCta from 'components/assets/ButtonCta'
 import { CardProps } from 'components/CardPage'
 import { motion } from 'framer-motion'
 import { Dispatch, SetStateAction } from 'react'
@@ -34,6 +35,12 @@ const CardsList = ({ list, setSelectedItem }: CardsListProps) => (
             >
               <span className="category">{item.planTime}</span>
               <h2>{item.title}</h2>
+              <ul>
+                {item.list?.map((subItem) => (
+                  <li key={'subItem-' + item.id}>{subItem}</li>
+                ))}
+              </ul>
+              <ButtonCta>Ver esse</ButtonCta>
             </motion.div>
           </motion.div>
         </S.CardClosed>
