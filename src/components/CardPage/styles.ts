@@ -44,6 +44,20 @@ export const Wrapper = styled.div<CardProps>`
       top: 30px;
       left: 30px;
       z-index: ${theme._d.layers.alwaysOnTop};
+      ul {
+        list-style: inside;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 32px 0 0 0;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 16px 0 16px 0;
+        background-color: #000000b1;
+        li {
+          width: 90%;
+        }
+      }
     }
     .content-container {
       padding: 460px 35px 35px 35px;

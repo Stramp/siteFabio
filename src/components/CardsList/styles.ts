@@ -57,5 +57,19 @@ export const CardClosed = styled.div<CardProps>`
       font-size: 14px;
       text-transform: uppercase;
     }
+    ul {
+      list-style: inside;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin: 32px 0 0 0;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 16px 0 16px 0;
+      background-color: #000000b1;
+      li {
+        width: 90%;
+      }
+    }
   `}
 `

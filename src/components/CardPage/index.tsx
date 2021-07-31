@@ -47,6 +47,11 @@ const CardPage = ({ selectedItem, setSelectedItem }: CardPageProps) => (
         >
           <span className="category">{selectedItem?.planTime}</span>
           <h2>{selectedItem?.title}</h2>
+          <ul>
+            {selectedItem?.list?.map((subItem) => (
+              <li key={'subItem-' + selectedItem?.id}>{subItem}</li>
+            ))}
+          </ul>
         </motion.div>
         <motion.div className="content-container" animate>
           <p>teste teste teste</p>
