@@ -1,7 +1,7 @@
 import * as S from './styles'
 
 export type TelefoneLogoProps = {
-  size?: '15px'
+  size?: string
 }
 
 const TelefoneLogo = ({ size = '15px' }: TelefoneLogoProps) => (

@@ -10,9 +10,8 @@ const SectionContact = () => (
   <S.Wrapper>
     <Heading prevTit="Faça" posTit="contato" />
     <S.Container>
-      <BoxContact />
-      <BoxContact />
-      <BoxContact />
+      <BoxContact tipo="email" />
+      <BoxContact tipo="tel" />
     </S.Container>
   </S.Wrapper>
 )
