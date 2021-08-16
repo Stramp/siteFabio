@@ -1,5 +1,6 @@
 import Heading from 'components/assets/Heading'
 import BoxContact from 'components/BoxContact'
+import FormWhats from 'components/FormWhats'
 import * as S from './styles'
 
 export type SectionContactProps = {
@@ -9,10 +10,11 @@ export type SectionContactProps = {
 const SectionContact = () => (
   <S.Wrapper>
     <Heading prevTit="Faça" posTit="contato" />
-    <S.Container>
+    <S.BoxContainer>
       <BoxContact tipo="email" />
       <BoxContact tipo="tel" />
-    </S.Container>
+    </S.BoxContainer>
+    <FormWhats />
   </S.Wrapper>
 )
 

@@ -6,11 +6,12 @@ export const Wrapper = styled.section<SectionContactProps>`
     color: ${theme.colors.mainTxt};
   `}
 `
-export const Container = styled.div`
+export const BoxContainer = styled.div`
   ${({ theme }) => css`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
     padding: 0 ${theme._d.spacings.xxsmall};
     gap: ${theme._d.spacings.xxsmall};
     margin-top: ${theme._d.spacings.medium};
