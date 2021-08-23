@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
-import { TelefoneLogoProps } from '.'
+import { EmailLogoProps } from '.'
 
-export const Wrapper = styled.div<TelefoneLogoProps>`
+export const Wrapper = styled.div<EmailLogoProps>`
   ${({ theme, size }) => css`
     color: ${theme.colors.mainTxt};
     width: ${size};
