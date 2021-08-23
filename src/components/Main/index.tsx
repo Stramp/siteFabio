@@ -7,6 +7,7 @@ import SectionArticles from 'components/sections/SectionArticles'
 import { useEffect, useState } from 'react'
 import { getData, DataProps } from 'controllers/getData'
 import SectionPlans from 'components/sections/SectionPlans'
+import SectionContact from 'components/sections/SectionContact'
 
 const Main = () => {
   const [dataList, setDataList] = useState<DataProps>()
@@ -41,6 +42,7 @@ const Main = () => {
         prevTit={dataList?.accordion.prevTit}
         posTit={dataList?.accordion.posTit}
       />
+      <SectionContact />
     </S.Wrapper>
   )
 }
