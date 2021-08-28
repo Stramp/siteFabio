@@ -18,7 +18,6 @@ export const Wrapper = styled.div<CardProps>`
 
     .card-content {
       position: relative;
-      border-radius: 20px;
       background: #1c1c1e;
       width: 100%;
       margin: 0 auto;
@@ -30,7 +29,7 @@ export const Wrapper = styled.div<CardProps>`
     .card-image-container {
       position: absolute;
       top: 0;
-      left: 0;
+      left: -30%;
       overflow: hidden;
       height: 420px;
       background-image: url(${uri});
@@ -43,6 +42,7 @@ export const Wrapper = styled.div<CardProps>`
       max-width: 300px;
       top: 30px;
       left: 30px;
+      color: #fff;
       z-index: ${theme._d.layers.alwaysOnTop};
       ul {
         list-style: inside;
@@ -55,6 +55,7 @@ export const Wrapper = styled.div<CardProps>`
         padding: 16px 0 16px 0;
         background-color: #000000b1;
         li {
+          color: #fff;
           width: 90%;
         }
       }
@@ -63,6 +64,9 @@ export const Wrapper = styled.div<CardProps>`
       padding: 460px 35px 35px 35px;
       width: 90vw;
       overflow: auto;
+      button {
+        margin: 16px 0 0;
+      }
     }
     p {
       color: #9d9ca1;

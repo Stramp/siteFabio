@@ -25,10 +25,11 @@ export const CardClosed = styled.div<CardProps>`
     position: relative;
     display: block;
     pointer-events: none;
+    padding: 20px;
     .card-content {
       pointer-events: auto;
       position: relative;
-      border-radius: 20px;
+      //border-radius: 20px;
       background: #1c1c1e;
       overflow: hidden;
       width: 100%;
@@ -38,7 +39,7 @@ export const CardClosed = styled.div<CardProps>`
     .card-image-container {
       position: absolute;
       top: 0;
-      left: 0;
+      left: -60%;
       overflow: hidden;
       height: 420px;
       width: 100vw;
@@ -48,9 +49,12 @@ export const CardClosed = styled.div<CardProps>`
     }
     .title-container {
       position: absolute;
-      top: 15px;
-      left: 15px;
-      max-width: 300px;
+      flex-direction: column;
+      display: flex;
+      height: 90%;
+      justify-content: space-between;
+      margin: 15px;
+      color: #fff;
     }
     .category {
       color: #fff;
@@ -62,13 +66,13 @@ export const CardClosed = styled.div<CardProps>`
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      margin: 32px 0 0 0;
       font-weight: 600;
       font-size: 14px;
       padding: 16px 0 16px 0;
       background-color: #000000b1;
       li {
         width: 90%;
+        color: #fff;
       }
     }
   `}

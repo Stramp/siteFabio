@@ -33,8 +33,10 @@ const CardsList = ({ list, setSelectedItem }: CardsListProps) => (
               className="title-container"
               layoutId={`title-container-${item.id}`}
             >
-              <span className="category">{item.planTime}</span>
-              <h2>{item.title}</h2>
+              <div>
+                <span className="category">{item.planTime}</span>
+                <h2>{item.title}</h2>
+              </div>
               <ul>
                 {item.list?.map((subItem) => (
                   <li key={'subItem-' + item.id}>{subItem}</li>
