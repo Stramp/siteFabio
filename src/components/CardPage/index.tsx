@@ -1,3 +1,4 @@
+import ButtonCta from 'components/assets/ButtonCta'
 import { motion } from 'framer-motion'
 import { Dispatch, SetStateAction } from 'react'
 import * as S from './styles'
@@ -54,13 +55,16 @@ const CardPage = ({ selectedItem, setSelectedItem }: CardPageProps) => (
           </ul>
         </motion.div>
         <motion.div className="content-container" animate>
-          <p>teste teste teste</p>
-          <p>teste teste teste</p>
-          <p>teste teste teste</p>
-          <br />
-          <p>teste teste teste</p>
-          <p>teste teste teste</p>
-          <p>teste teste teste</p>
+          <div>
+            <p>teste teste teste</p>
+            <p>teste teste teste</p>
+            <p>teste teste teste</p>
+            <br />
+            <p>teste teste teste</p>
+            <p>teste teste teste</p>
+            <p>teste teste teste</p>
+            <ButtonCta>Pegar</ButtonCta>
+          </div>
         </motion.div>
       </motion.div>
     </div>
