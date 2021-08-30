@@ -41,7 +41,7 @@
     "@typescript-eslint/eslint-plugin": "^4.29.3",
     "@types/styled-components": "^5.1.12",
     "@types/react": "^17.0.19",
-    "@types/node": "^16.7.4",
+    "@types/node": "^16.7.6",
     "@types/react-slick": "^0.23.5",
     "@types/styled-components": "^5.1.13",
     "@typescript-eslint/parser": "^4.29.3",
