@@ -26,4 +26,4 @@ export const light = {
     mainBgAlpha: '#FAFAFA00'
   }
 } as const
-export const currentTheme = light
+export const currentTheme = dark
