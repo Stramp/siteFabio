@@ -77,8 +77,6 @@ const Navigation = ({
             </S.Li>
           ))}
         </S.Ul>
-
-        <S.Login>teste</S.Login>
       </S.Nav>
     </S.MenuSection>
   )

@@ -36,10 +36,11 @@ export const Nav = styled(motion.nav)<NavigationProps>`
   justify-content: space-around;
   padding-top: 40px;
   ${customMedia.greaterThan('lMobile')`
-    position: inherit;
+    position: absolute;
     width: fit-content;
     height: fit-content;
     flex-direction: row;
+    left: 258px;
   `}
 `
 
