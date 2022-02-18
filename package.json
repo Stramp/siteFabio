@@ -43,7 +43,7 @@
     "@types/react": "^17.0.37",
     "@types/node": "^16.11.11",
     "@types/react-slick": "^0.23.7",
-    "@types/styled-components": "^5.1.14",
+    "@types/styled-components": "^5.1.23",
     "@typescript-eslint/parser": "^4.33.0",
     "babel-loader": "^8.2.3",
     "babel-plugin-styled-components": "^2.0.2",
